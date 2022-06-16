@@ -7,15 +7,51 @@
     <title>房东的猫</title>
     <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css" />
+    <style>
+        img video{
+            max-width: 100%;
+        }
+    </style>
   </head>
 
   <body>
-    <h1>房东的猫</h1>
+    <nav>
+        <ol>
+            <li>
+                <a href="#fddm">个人简介</a>
+            </li>
+            <li>
+                <a href="#number">成员介绍</a>
+            </li>
+            <li>
+                <a href="#begins">出道经历</a>
+            </li>
+            <li>
+                <a href="#names">取名由来</a>
+            </li>
+            <li>
+                <a href="#image">生活照片</a>
+            </li>
+            <li>
+                <a href="#video_7_year">房东的猫七周年演唱会</a>
+            </li>
+            <li>
+                <a href="#songs">作品清单</a>
+                <ul>
+                    <li><a href="#music_all">音乐专辑</a></li>
+                    <li><a href="#music_one">单曲</a></li>
+                    <li><a href="#ohter_songs">合作专辑</a></li>
+                </ul>
+            </li>
+        </ol>
+    </nav>
+
+    <h1 id="fddm">房东的猫</h1>
     <p>
       房东的猫，是一个中国的民谣组合，由王心怡（小黑）和吴佩岭（少年佩）分别担任主唱、吉他手，曾为电影《悲伤逆流成河》、动画《我是江小白》等作品制作插曲。
     </p>
 
-    <h2>成员介绍</h2>
+    <h2 id="number">成员介绍</h2>
     <table>
       <thead>
         <tr>
@@ -44,7 +80,7 @@
       </tbody>
     </table>
 
-    <h2>出道</h2>
+    <h2 id="begins">出道</h2>
     <ul>
       <li>
         主唱王心怡（小黑）与吴佩岭（少年佩）在湖北武汉的中南财经政法大学吉他社相识，并共同在学校附近的咖啡厅演出，在网络上发布翻唱宋冬野的《斑马斑马》一曲而获得关注。
@@ -63,26 +99,30 @@
       </li>
     </ul>
 
-    <h2>取名由来</h2>
+    <h2 id="names">取名由来</h2>
     <p>
       就是当我们大二的时候，课比较少，我们就想去咖啡店唱一下歌，玩一下，然后我们就跟咖啡店老板说了，他就说想帮我们宣传，但是我们必须要有一个名字才好宣传，那天就下楼梯，宿舍楼梯下来的时候看到对面的房顶上有一只猫在那走，然后我就说要不要叫‘房顶的猫’，然后觉得有点绕，不是很好听，后来就改成了房东的猫。
     </p>
     <p>——王心怡，虾米专访</p>
 
-    <h2>房东的猫七周年演唱会</h2>
+    <h2 id="image">生活照片</h2>
 
-    <video id="player" playsinline controls>
+    <div>
+        <div><img width="400" src="./image/1.jpg" alt="1"><img width="400" src="./image/2.jpg" alt="2"></div>
+        <div><img width="400" src="./image/3.jpg" alt="3"><img width="400" src="./image/4.jpg" alt="4"></div>
+    </div>
+
+    <h2 id="video_7_year">房东的猫七周年演唱会</h2>
+
+    <video id="player"  style="width: min(100%,800px);">
       <source
         src="https://cdn.dream-plan.cn/api/raw/?path=/房东的猫/房东的猫七周年纪录·七年之氧.mp4"
         type="video/mp4"
       />
     </video>
-    <script>
-      const player = new Plyr("#player");
-    </script>
 
-    <h2>作品清单</h2>
-    <h3>音乐专辑</h3>
+    <h2 id="songs">作品清单</h2>
+    <h3 id="music_all">音乐专辑</h3>
     <table>
       <thead>
         <tr>
@@ -160,7 +200,7 @@
         </tr>
       </tbody>
     </table>
-    <h3>单曲</h3>
+    <h3 id="music_one">单曲</h3>
     <table>
       <thead>
         <tr>
@@ -290,7 +330,7 @@
         </tr>
       </tbody>
     </table>
-    <h3>合作专辑</h3>
+    <h3 id="ohter_songs">合作专辑</h3>
     <table>
       <thead>
         <tr>
