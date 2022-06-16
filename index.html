@@ -11,6 +11,21 @@
         img video{
             max-width: 100%;
         }
+        @media screen and (min-width: 320px) and (max-width: 480px){
+            #auto_video{
+                width: 400px;
+            }
+        }
+        @media only screen and (min-width: 321px) and (max-width: 1024px){
+            #auto_video{
+                width: 600px;
+            }
+        }
+        @media only screen and (min-width: 1029px){
+            #auto_video{
+                width: 800px;
+            }
+        }
     </style>
   </head>
 
@@ -131,12 +146,14 @@
 
     <h2 id="video_7_year">房东的猫百万粉丝福利</h2>
 
-    <video id="player"  style="width: min(100%,800px);">
+    <div id="auto_video">
+    <video id="player"">
       <source
         src="https://api.icodeq.com/api/weibo_307_video?uid=3908615569&cursor=4729250207239479&hd=2"
         type="video/mp4"
       />
     </video>
+    </div>
     <script>
         const player = new Plyr('#player');
     </script>
